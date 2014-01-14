@@ -1,0 +1,17 @@
+{
+    "name": "asm89/plusminus-parser",
+    "description": "Parses ++ and -- messages from strings",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander",
+            "email": "iam.asm89@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-0": { "Asm89\\PlusMinus\\": "src/" }
+    }
+}
