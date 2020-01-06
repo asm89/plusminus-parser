@@ -115,6 +115,7 @@ class MessageParserTest extends TestCase
             ['--'],
             ['----'],
             ['------'],
+            ["\n--"],
         ];
     }
 
