@@ -46,7 +46,7 @@ class BracketMatcher extends Matcher
             return;
         }
 
-        return new Match($message, $start, $type, $valueStart, $end, $this->priority);
+        return new FoundMatch($message, $start, $type, $valueStart, $end, $this->priority);
     }
 
     private function findEndingBracket($message, $matchString)
