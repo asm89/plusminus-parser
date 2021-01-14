@@ -2,12 +2,14 @@
 
 namespace Asm89\PlusMinus;
 
+use PHPUnit\Framework\TestCase;
+
 class ItemTest extends TestCase
 {
     private $minusItem;
     private $plusItem;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->minusItem  = new Item('asm89', Item::MINUS);
         $this->plusItem = new Item('asm89', Item::PLUS);

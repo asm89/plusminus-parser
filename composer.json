@@ -13,5 +13,11 @@
     },
     "autoload": {
         "psr-0": { "Asm89\\PlusMinus\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-0": { "Asm89\\PlusMinus\\": "test/" }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
     }
 }

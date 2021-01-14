@@ -2,11 +2,13 @@
 
 namespace Asm89\PlusMinus;
 
+use PHPUnit\Framework\TestCase;
+
 class MessageParserTest extends TestCase
 {
     private $messageParser;
 
-    public function setUp()
+    public function setUp(): void
     {
         $matchers = [
             new WordMatcher(0),
