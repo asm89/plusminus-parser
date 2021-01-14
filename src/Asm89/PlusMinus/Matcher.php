@@ -10,14 +10,14 @@ abstract class Matcher
     /**
      * @param string $message
      *
-     * @return null|Match
+     * @return null|FoundMatch
      */
     abstract public function matchMinus($message);
 
     /**
      * @param string $message
      *
-     * @return null|Match
+     * @return null|FoundMatch
      */
     abstract public function matchPlus($message);
 }

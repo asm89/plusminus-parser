@@ -45,7 +45,7 @@ class WordMatcher extends Matcher
             return;
         }
 
-        return new Match($message, $start, $type, $start, $end, $this->priority);
+        return new FoundMatch($message, $start, $type, $start, $end, $this->priority);
     }
 
     private function findStartOfWord($string, $end)

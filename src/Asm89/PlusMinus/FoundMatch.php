@@ -5,7 +5,7 @@ namespace Asm89\PlusMinus;
 /**
  * Represents a match on an item.
  */
-class Match
+class FoundMatch
 {
     private $message;
     private $end;
@@ -36,11 +36,11 @@ class Match
      * Checks if the item outmatches the other item. Will favor matches with a
      * higher priority.
      *
-     * @param Match $other
+     * @param FoundMatch $other
      *
      * @return boolean
      */
-    public function outmatches(Match $other)
+    public function outmatches(FoundMatch $other)
     {
         if ($other->position == $this->position) {
             return $this->priority > $other->priority;
